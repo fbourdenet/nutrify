@@ -14,7 +14,7 @@ const Progress = (props: Props) => {
     <SafeAreaView style={[globalStyle.parentContainer, colors.background]}>
       <ScrollView>
         <View style={globalStyle.container}>
-          <BasicHeader title="Progress" subtitle='Track your achievements!' />
+          <BasicHeader title="Progress" />
         </View>
       </ScrollView>
     </SafeAreaView>

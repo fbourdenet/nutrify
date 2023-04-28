@@ -7,23 +7,31 @@ export const fonts = StyleSheet.create({
         fontWeight: "700"
     },
     h2: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: "700"
     },
     h3: {
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: "700"
     },
     h4: {
+        fontSize: 16,
+        fontWeight: "700"
+    },
+    h5: {
         fontSize: 14,
         fontWeight: "600"
     },
-    h5: {
+    h6: {
         fontSize: 12,
         fontWeight: "600"
     },
-    h6: {
+    h7: {
         fontSize: 8,
         fontWeight: "500"
     },
+    calories: {
+        fontSize: 40,
+        fontWeight: "600"
+    }
 });

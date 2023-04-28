@@ -11,7 +11,8 @@ const Divider = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 15
+        marginLeft: 15,
+        marginRight: 15
     }
 });
 

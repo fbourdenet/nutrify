@@ -15,13 +15,12 @@ const Home = (props: Props) => {
         <SafeAreaView style={[globalStyle.parentContainer, colors.background]}>
             <ScrollView>
                 <View style={globalStyle.container}>
-                    <BasicHeader title="Today, Mar 21" subtitle='Hello, Florian !' icon={{ name: "calendar-month" }} />
+                    <BasicHeader title="Today, Mar 21" subtitle='Hello Florian!'/>
                     <BasicSection>
                         <CaloriesRecap />
                     </BasicSection>
                 </View>
             </ScrollView>
-
         </SafeAreaView>
     )
 }

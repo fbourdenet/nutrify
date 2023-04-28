@@ -26,19 +26,19 @@ function TabNavigation() {
             },
         }}>
             <TabNavigator.Screen name="Today" component={TodayScreen} options={{
-                tabBarActiveTintColor: "#E4E4E4",
+                tabBarActiveTintColor: "#6d7bfa",
                 tabBarInactiveTintColor: "#8D8D8D",
-                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='home' size={26} style={focused ? colors.secondaryText : colors.secondarySubText} />
+                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='home' size={26} style={focused ? colors.textColor : colors.secondarySubText} />
             }} />
                         <TabNavigator.Screen name="Meal" component={MealScreen} options={{
-                tabBarActiveTintColor: "#E4E4E4",
+                tabBarActiveTintColor: "#6d7bfa",
                 tabBarInactiveTintColor: "#8D8D8D",
-                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='food-apple' size={26} style={focused ? colors.secondaryText : colors.secondarySubText} />
+                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='food-apple' size={26} style={focused ? colors.textColor : colors.secondarySubText} />
             }} />
             <TabNavigator.Screen name="Progress" component={ProgressScreen} options={{
-                tabBarActiveTintColor: "#E4E4E4",
+                tabBarActiveTintColor: "#6d7bfa",
                 tabBarInactiveTintColor: "#8D8D8D",
-                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='chart-timeline-variant' size={26} style={focused ? colors.secondaryText : colors.secondarySubText} />
+                tabBarIcon: ({ focused }) => <MaterialCommunityIcons name='chart-timeline-variant' size={26} style={focused ? colors.textColor : colors.secondarySubText} />
             }} />
         </TabNavigator.Navigator>
     )

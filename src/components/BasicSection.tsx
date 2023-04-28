@@ -21,9 +21,12 @@ const BasicSection = ({ title, subtitle, children }: BasicSectionProps) => {
                 {subtitle &&
                     <Text style={[styles.subtitleText, colors.secondaryText, fonts.h3]}>{subtitle}</Text>
                 }
-                <View style={styles.childrenContainer}>
-                    {children}
-                </View>
+
+                {children &&
+                    <View style={styles.childrenContainer}>
+                        {children}
+                    </View>
+                }
             </View>
         </View>
     )
@@ -31,17 +34,18 @@ const BasicSection = ({ title, subtitle, children }: BasicSectionProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 25
+        marginBottom: 20
     },
     subContainer: {
         borderRadius: 10,
-        padding: 15
+        padding: 20
     },
     titleText: {
-        paddingBottom: 10
+        paddingBottom: 15
     },
     subtitleText: {
         borderRadius: 10,
+        paddingBottom: 5
     },
     childrenContainer: {
         borderRadius: 10,

@@ -23,5 +23,11 @@ export const colors = StyleSheet.create({
         borderColor: "#363636",
         borderWidth: 0.5,
         borderRadius: 10
+    },
+    textColor: {
+        color: "#6d7bfa"
+    },
+    colorBackground: {
+        backgroundColor: "#6d7bfa"
     }
 });

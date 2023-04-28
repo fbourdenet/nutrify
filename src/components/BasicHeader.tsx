@@ -20,13 +20,13 @@ const BasicHeader = ({ title, subtitle, icon }: BasicHeaderProps) => {
                 }
                 {title && subtitle &&
                     <>
-                        <Text style={[fonts.h1, colors.secondaryText]}>{title}</Text>
                         <Text style={[styles.helloText, fonts.h4, colors.secondarySubText]}>{subtitle}</Text>
+                        <Text style={[fonts.h1, colors.secondaryText]}>{title}</Text>
                     </>
                 }
             </View>
             {icon &&
-                <MaterialCommunityIcons name={icon.name} size={26} style={colors.secondaryText} />
+                <MaterialCommunityIcons name={icon.name} size={26} style={colors.textColor} />
             }
         </View>
     )
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "baseline",
-        marginBottom: 30,
+        marginBottom: 20,
     },
     helloText: {
         paddingTop: 4
