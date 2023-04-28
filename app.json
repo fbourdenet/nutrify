@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "nutrify",
+    "entry": "./src/App.js",
+    "name": "Nutrify",
     "slug": "nutrify",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -29,6 +30,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
+    }
   }
 }
