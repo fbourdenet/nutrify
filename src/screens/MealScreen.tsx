@@ -14,7 +14,7 @@ const MealScreen = (props: Props) => {
     <SafeAreaView style={[globalStyle.parentContainer, colors.background]}>
       <ScrollView>
         <View style={globalStyle.container}>
-          <BasicHeader title="Meals" subtitle='Customize your meals !' />
+          <BasicHeader title="Meals" subtitle='Customize your meals!' />
           <BasicSection title='Breakfast'>
             <Food />
             <Divider />
