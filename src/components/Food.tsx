@@ -27,8 +27,6 @@ const Food = ({ food }: FoodProps) => {
                     {food?.quantity &&
                         <Text style={[colors.secondarySubText, fonts.h6]}>{food?.quantity} g</Text>
                     }
-
-
                 </View>
             </View>
             <View style={styles.iconContainer}>

@@ -20,7 +20,7 @@ const MealScreen = (props: Props) => {
       <ScrollView>
         <View style={globalStyle.container}>
           <BasicHeader title="Meals" icon={{ name: "calendar-month" }} />
-          <BasicSection subtitle='Breakfast'>
+          <BasicSection subtitle='☕ Breakfast'>
             <Food food={{
               name: "dd",
               icon: "",
@@ -52,28 +52,13 @@ const MealScreen = (props: Props) => {
             }} />
             <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
           </BasicSection>
-          <BasicSection subtitle='Meal'>
-            <Food />
-            <Divider />
-            <Food />
-            <Divider />
-            <Food />
+          <BasicSection subtitle='🍴 Meal'>
             <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
           </BasicSection>
-          <BasicSection subtitle='Diner'>
-            <Food />
-            <Divider />
-            <Food />
-            <Divider />
-            <Food />
+          <BasicSection subtitle='🥗 Diner'>
             <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
           </BasicSection>
-          <BasicSection subtitle='Snack'>
-            <Food />
-            <Divider />
-            <Food />
-            <Divider />
-            <Food />
+          <BasicSection subtitle='🍎 Snack'>
             <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
           </BasicSection>
         </View>
