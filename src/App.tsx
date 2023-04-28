@@ -6,17 +6,9 @@ import { MMKV } from 'react-native-mmkv'
 import { NavigationContainer } from '@react-navigation/native';
 import StackNavigation from './navigation/StackNavigation';
 
-export const storage = new MMKV()
-
-storage.set('user.name', 'Marc')
+// export const storage = new MMKV()
 
 export default function App() {
-  const [username, setUsername] = useState<string | undefined>();
-
-  useEffect(() => {
-    storage.set('user.name', 'Marc')
-    setUsername(storage.getString('user.name'))// 'Marc'
-  }, [])
 
   return (
     <NavigationContainer>

@@ -6,6 +6,7 @@ import BasicSection from '../components/BasicSection'
 import Divider from '../components/Divider'
 import Food from '../components/Food'
 import { colors } from '../constants/colors'
+import CaloriesRecap from '../components/CaloriesRecap'
 
 type Props = {}
 
@@ -16,11 +17,7 @@ const Home = (props: Props) => {
                 <View style={globalStyle.container}>
                     <BasicHeader title="Today, Mar 21" subtitle='Hello, Florian !' icon={{ name: "calendar-month" }} />
                     <BasicSection>
-                        <Food />
-                        <Divider />
-                        <Food />
-                        <Divider />
-                        <Food />
+                        <CaloriesRecap />
                     </BasicSection>
                 </View>
             </ScrollView>
