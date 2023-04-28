@@ -15,21 +15,7 @@ const Home = (props: Props) => {
             <ScrollView>
                 <View style={globalStyle.container}>
                     <BasicHeader title="Today, Mar 21" subtitle='Hello, Florian !' icon={{ name: "calendar-month" }} />
-                    <BasicSection title='Breakfast'>
-                        <Food />
-                        <Divider />
-                        <Food />
-                        <Divider />
-                        <Food />
-                    </BasicSection>
-                    <BasicSection title='Meal'>
-                        <Food />
-                        <Divider />
-                        <Food />
-                        <Divider />
-                        <Food />
-                    </BasicSection>
-                    <BasicSection title='Diner'>
+                    <BasicSection>
                         <Food />
                         <Divider />
                         <Food />

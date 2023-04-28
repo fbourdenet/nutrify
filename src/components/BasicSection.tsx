@@ -31,14 +31,13 @@ const BasicSection = ({ title, subtitle, children }: BasicSectionProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 20
+        marginBottom: 25
     },
     subContainer: {
         borderRadius: 10,
         padding: 15
     },
     titleText: {
-        paddingTop: 10,
         paddingBottom: 10
     },
     subtitleText: {
