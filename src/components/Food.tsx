@@ -2,24 +2,37 @@ import { View, Text, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import { colors } from '../constants/colors'
 import { fonts } from '../constants/fonts'
+import { IFood } from '../types/IFood'
 
-type Props = {}
+type FoodProps = {
+    food: IFood
+}
 
-const Food = (props: Props) => {
+const Food = ({ food }: FoodProps) => {
     return (
         <View style={styles.container}>
             <View style={styles.foodContainer}>
                 <View>
-                    <Text style={[colors.secondaryText, fonts.h5, styles.foodText]} numberOfLines={2}>Eau de source - Cristaline</Text>
+                    <Text style={[colors.secondaryText, fonts.h5, styles.foodText]} numberOfLines={1}>{food?.name}</Text>
                 </View>
                 <View style={styles.nutrientsContainer}>
-                    <Text style={[colors.textColor, fonts.h6]}>130 kcal</Text>
-                    <Text style={[colors.secondarySubText, fonts.h7, styles.separatorText]}>●</Text>
-                    <Text style={[colors.secondarySubText, fonts.h6]}>50g</Text>
+                    {food?.energy?.value &&
+                        <Text style={[colors.textColor, fonts.h6]}>{food?.energy?.value} {food?.energy?.unit}</Text>
+
+                    }
+                    {food?.energy?.value && food?.quantity &&
+                        <Text style={[colors.secondarySubText, fonts.h7, styles.separatorText]}>●</Text>
+
+                    }
+                    {food?.quantity &&
+                        <Text style={[colors.secondarySubText, fonts.h6]}>{food?.quantity} g</Text>
+                    }
+
+
                 </View>
             </View>
             <View style={styles.iconContainer}>
-                <Image source={{uri: "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.433.400.jpg"}} style={{width: 40, height: 40, resizeMode: "contain"}}/>
+                <Image source={{ uri: food?.icon }} style={{ width: 40, height: 40, resizeMode: "contain" }} />
             </View>
         </View>
     )
@@ -41,7 +54,7 @@ const styles = StyleSheet.create({
         paddingRight: 15
     },
     iconContainer: {
-        width: 40, 
+        width: 40,
         height: 40,
         flexShrink: 0,
         backgroundColor: "white",

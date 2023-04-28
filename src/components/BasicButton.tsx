@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 15,
         borderRadius: 10,
-        marginTop: 5
+        marginTop: 10,
+        marginBottom: 20
     },
     containerText: {
         textAlign: "center"

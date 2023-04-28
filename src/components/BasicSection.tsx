@@ -17,7 +17,7 @@ const BasicSection = ({ title, subtitle, children }: BasicSectionProps) => {
             {title &&
                 <Text style={[styles.titleText, colors.secondaryText, fonts.h3]}>{title}</Text>
             }
-            <View style={[styles.subContainer, colors.secondaryBackground, colors.border]}>
+            <View style={[colors.secondaryBackground, colors.border, styles.subContainer]}>
                 {subtitle &&
                     <Text style={[styles.subtitleText, colors.secondaryText, fonts.h3]}>{subtitle}</Text>
                 }
@@ -34,22 +34,16 @@ const BasicSection = ({ title, subtitle, children }: BasicSectionProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 20
+        marginBottom: 30
     },
     subContainer: {
-        borderRadius: 10,
-        padding: 20
-    },
-    titleText: {
-        paddingBottom: 15
+        paddingLeft: 20,
+        paddingRight: 20,
     },
     subtitleText: {
-        borderRadius: 10,
-        paddingBottom: 5
-    },
-    childrenContainer: {
-        borderRadius: 10,
-    },
+        paddingVertical: 20
+    }
+
 })
 
 export default BasicSection

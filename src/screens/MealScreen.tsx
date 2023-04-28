@@ -21,6 +21,54 @@ const MealScreen = (props: Props) => {
         <View style={globalStyle.container}>
           <BasicHeader title="Meals" icon={{ name: "calendar-month" }} />
           <BasicSection subtitle='Breakfast'>
+            <Food food={{
+              name: "dd",
+              icon: "",
+              quantity: 400,
+              energy: {
+                unit: "kcal",
+                value: 500
+              }
+            }} />
+            <Divider />
+            <Food food={{
+              name: "dd",
+              icon: "",
+              quantity: 400,
+              energy: {
+                unit: "kcal",
+                value: 500
+              }
+            }} />
+            <Divider />
+            <Food food={{
+              name: "dd",
+              icon: "",
+              quantity: 400,
+              energy: {
+                unit: "kcal",
+                value: 500
+              }
+            }} />
+            <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
+          </BasicSection>
+          <BasicSection subtitle='Meal'>
+            <Food />
+            <Divider />
+            <Food />
+            <Divider />
+            <Food />
+            <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
+          </BasicSection>
+          <BasicSection subtitle='Diner'>
+            <Food />
+            <Divider />
+            <Food />
+            <Divider />
+            <Food />
+            <BasicButton title='Ajouter un aliment' action={() => navigation.navigate("SearchFoodScreen")} />
+          </BasicSection>
+          <BasicSection subtitle='Snack'>
             <Food />
             <Divider />
             <Food />

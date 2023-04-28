@@ -14,7 +14,7 @@ const CaloriesRecap = (props: Props) => {
         <View style={styles.container}>
             <View style={styles.progressContainer}>
                 <AnimatedCircularProgress
-                    size={225}
+                    size={200}
                     width={20}
                     fill={80}
                     arcSweepAngle={230}
@@ -22,7 +22,7 @@ const CaloriesRecap = (props: Props) => {
                     lineCap='round'
                     padding={0}
                     tintColor='#6d7bfa'
-                    style={{ margin: 0, padding: 0 }}
+                    style={{ marginTop: 30, padding: 0 }}
                     renderCap={({ center }) => <Circle cx={center.x} cy={center.y} r="10" fill="#6d7bfa" strokeWidth={3} stroke="#E4E4E4" />}
                     onAnimationComplete={() => console.log('onAnimationComplete')}
                     backgroundColor="#8D8D8D">
@@ -46,7 +46,7 @@ const CaloriesRecap = (props: Props) => {
                             maximumTrackTintColor={"#8D8D8D"}
                             trackStyle={{ height: 8, borderRadius: 10 }}
                             thumbStyle={{ height: 0, width: 0 }}
-                            containerStyle={{marginVertical: -10}}
+                            containerStyle={{ marginVertical: -10 }}
                             disabled
                         />
                         <Text style={[fonts.h6, colors.secondarySubText, styles.kcalText]}>2100 g</Text>
@@ -61,7 +61,7 @@ const CaloriesRecap = (props: Props) => {
                             maximumTrackTintColor={"#8D8D8D"}
                             trackStyle={{ height: 8, borderRadius: 10 }}
                             thumbStyle={{ height: 0, width: 0 }}
-                            containerStyle={{marginVertical: -10}}
+                            containerStyle={{ marginVertical: -10 }}
                             disabled
                         />
                         <Text style={[fonts.h6, colors.secondarySubText, styles.kcalText]}>2100 g</Text>
@@ -76,15 +76,14 @@ const CaloriesRecap = (props: Props) => {
                             maximumTrackTintColor={"#8D8D8D"}
                             trackStyle={{ height: 8, borderRadius: 10 }}
                             thumbStyle={{ height: 0, width: 0 }}
-                            containerStyle={{marginVertical: -10}}
+                            containerStyle={{ marginVertical: -10 }}
                             disabled
                         />
                         <Text style={[fonts.h6, colors.secondarySubText, styles.kcalText]}>2100 g</Text>
                     </View>
                 </View>
-                
-            </View>
 
+            </View>
             <View style={styles.detailsContainer}>
                 <View style={styles.detailContainer}>
                     <Text style={[fonts.h2, colors.secondaryText, styles.kcalText]}>2100 kcal</Text>
@@ -101,12 +100,13 @@ const CaloriesRecap = (props: Props) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        padding: 0,
     },
     progressContainer: {
         flex: 1,
-        justifyContent: "space-around",
         alignItems: "center",
+        justifyContent: "center",
         flexDirection: "row"
     },
     caloriesContainer: {
@@ -115,9 +115,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
     },
     nutrientsContainer: {
-        flex: 2,
-        paddingLeft: 20,
-        marginTop: -40,
+        flex: 1,
+        marginLeft: 35,
         flexDirection: "column",
         justifyContent: "space-around"
     },
@@ -125,9 +124,10 @@ const styles = StyleSheet.create({
         justifyContent: "space-around",
     },
     detailsContainer: {
-        marginTop: -35,
+        marginTop: -15,
         flexDirection: "row",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        paddingBottom: 15
     },
     detailContainer: {
         alignItems: "center",

@@ -20,7 +20,7 @@ const BasicHeader = ({ title, subtitle, icon }: BasicHeaderProps) => {
                 }
                 {title && subtitle &&
                     <>
-                        <Text style={[styles.helloText, fonts.h4, colors.secondarySubText]}>{subtitle}</Text>
+                        <Text style={[styles.helloText, fonts.h5, colors.secondarySubText]}>{subtitle}</Text>
                         <Text style={[fonts.h1, colors.secondaryText]}>{title}</Text>
                     </>
                 }
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     helloText: {
-        paddingTop: 4
+        paddingBottom: 4
     }
 });
 
